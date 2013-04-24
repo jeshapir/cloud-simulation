@@ -44,7 +44,7 @@ public class InboxReader {
 	/* if set to ALL, uses all of the parts of speech to analyze the data, otherwise
 	 * uses just the given part of speech to peform the analysis */
 	private static final int CLASSIFIER = ALL;
-	public static final int MIN_MESSAGES = 4;
+	public static final int MIN_MESSAGES = 5;
 	private static final int MIN_MSG_LENGTH = 20;
 	
 	public InboxReader() {
