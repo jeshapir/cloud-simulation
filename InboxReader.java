@@ -47,7 +47,7 @@ public class InboxReader {
 	 * uses just the given part of speech to peform the analysis */
 	private static final int CLASSIFIER = ALL;
 	public static final int MIN_MESSAGES = 5;
-	private static final int MIN_MSG_LENGTH = 20;
+	private static final int MIN_MSG_LENGTH = 30;
 	
 	public InboxReader() {
 		_senderToMessageConcordances = new HashMap<String, ArrayList<HashMap<String, Integer>>>();
