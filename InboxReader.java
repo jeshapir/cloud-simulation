@@ -23,11 +23,13 @@ import javax.mail.Session;
 import javax.mail.Store;
 import javax.mail.internet.MimeMessage;
 
-/* This is an email scraper I wrote to analyze data from my Brown gmail account 
+/* AUTHOR: Joseph Shapiro (alias jeshapir)
+ * This is an email scraper I wrote to analyze data from my Brown gmail account 
  * for my experiment in CLPS 700, Social Psychology */
+ 
 public class InboxReader {
 
-  	// maps email aliases to a hashmap that is a concordance of the email
+  	/* maps email aliases to a hashmap that is a concordance of the email */
 	private HashMap<String, ArrayList<HashMap<String, Integer>>> _senderToMessageConcordances;
 	private HashMap<String, String> _aliasToGender;
 	private Session _mailSession;
@@ -259,6 +261,7 @@ public class InboxReader {
 				BufferedWriter bw = new BufferedWriter(new FileWriter(emailFile));
 				
 				for(Message m : _messages) {
+					
 					/* construct a concordance for this message */
 									
 					try {
